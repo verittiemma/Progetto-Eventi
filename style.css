@@ -11,23 +11,31 @@
     font-family: fontStyleSite;
 }
 
+body{
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
 nav {
 	position: relative;
 	z-index: 10;
 	padding: 0 5%;
-	height: 100px;
-	background-color: #C09BD8;
+	height: 15vh;
+	text-transform: uppercase;
 }
 
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: #fff;
-}
+.blurNav{
+	position: absolute;
+	height: 15vh;
+	width: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	filter: blur(8px);
+  	-webkit-filter: blur(8px);
+	margin: 0;
+	top: 0;
+	left: 0;
+}	
+
 nav .links {
 	padding: 0;
 	margin: 0;
@@ -50,7 +58,7 @@ nav .links a {
 }
 
 nav .links a:hover {
-    color: #000;
+	transform: scale(1.3);
 }
 
 #nav-toggle {
@@ -72,8 +80,175 @@ nav .icon-burger .line {
 	background-color: #fff;
 	margin: 5px;
 	border-radius: 3px;
-	transition: all .3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
+
+.relativeSection{
+	position: relative;
+	height: 85vh;
+	width: 100vw;
+}
+
+.imageBackground{
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+  	filter: blur(5px);
+	transform: scale(1.1); 
+}
+
+.flexContainer{
+	position: absolute;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	height: 60vh;
+	width: 80vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #EDE3E9;
+	border-radius: 10px;
+}
+
+.title{
+	margin:5% auto;
+	text-transform: uppercase;
+}
+
+.paragraphCustom{
+	width:50%;
+	margin:5% auto;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+	padding:1em;
+	border:solid 5px #000000;
+}
+
+.blackDiv{
+	border-style: solid;
+	position: absolute;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+	height: 60vh;
+	width: 80vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #EDE3E9;
+	border-radius: 10px;
+}
+
+.calendarTitle{
+	font-size: 30px;
+	padding-right: 30%;
+}
+
+.eventTitle{
+	font-size:70px;
+	padding-right: 30%;
+}
+
+.divGridLay{
+	width: 100%;
+	margin-left: 20%;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #000000;
+}
+
+.divCalendarioEventi{
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: #000000;
+}
+
+.a::before{
+	content: "";
+	z-index: 1;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border-style: solid 3px;
+}
+
+
+@media screen and (max-width:520px) {
+	/* .calendarTitle{
+		font-size: 20px !important ;
+	}
+
+	.eventTitle{
+		font-size: 20px !important;
+	} */
+
+	.divCalendarioEventi{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top:0;
+		width: 100%!important;
+		text-align: center!important;
+	}
+	.relativeSection .blackDiv .paragraphCustom{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media screen and (max-width: 1166px){
+	.divGridLay, .divCalendarioEventi{
+		padding-top: 10px;
+		font-size: 40px;
+		text-align: left;
+	}
+
+	.paragraphCustom{
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width:610px) {
+	.paragraphCustom{
+		font-size: 12px;
+	}
+	.divGridLay{
+		font-size: 20px;
+	}
+}
+
+
+@media screen and (max-width:685px) {
+	.calendarTitle{
+		font-size: 30px ;
+	}
+
+	.eventTitle{
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width:400px) {
+	.paragraphCustom{
+		font-size: 10px !important;
+	}
+
+	.divGridLay{
+		font-size: 20px !important;
+	}
+
+	.calendarTitle{
+		font-size: 20px !important ;
+	}
+
+	.eventTitle{
+		font-size: 20px !important;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	nav .links {
 		float: none;
@@ -86,9 +261,13 @@ nav .icon-burger .line {
 		width: auto;
 		height: auto;
 		flex-direction: column;
-		background-color: #C09BD8;
+		background: rgba(0, 0, 0, 1);
 		overflow: hidden;
 		transition: all .5s ease-in-out;
+	}
+
+	nav{
+		background: rgba(0, 0, 0, 1);
 	}
 	nav .links a {
 		font-size: 20px;
@@ -113,4 +292,27 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
 	}
+
+	.flexContainer{
+		display: block;
+		height: 80vh;
+	}
+
+	.divGridLay, .divCalendarioEventi{
+		padding-top: 10px;
+		font-size: 10px;
+		text-align: left;
+		width: 40%;
+	}
+
+	.paragraphCustom{
+		font-size: 13px;
+	}
+
+	.divGridLay{
+		font-size: 20px;
+	}
 }
+
+
+
