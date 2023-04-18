@@ -1,12 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contatti - Fashion Week</title>
+    <link rel="stylesheet" href="contatti.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/tacco.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
+<body class="custom-background-color">
+
+    <img class="imageBackground" src="./imgs/milanFashionWeekSfilata.jpeg" alt="imageSfilata">
+
+    <div class="blurNav"></div>
     
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <ul class="links">
+            <li class="itemList"><a href="./index.html">Home</a></li>
+            <li class="itemList"><a href="./calendario.html">Calendario</a></li>
+            <li class="itemList"><a href="./contatti.html">Contatti</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <section class="relativeSection">
+        <div class="flexContainer">
+            <div class="containerDivs">
+            <div class="divGridLay">
+                <h1 class="title">Contattaci</h1>
+            </div>
+            <div class="divParagraph"> 
+                <p>
+                    Vuoi organizzare un tuo personale evento durante la fashion week?
+                    Compila il form sottostante, ti daremo tutte le informazioni necessarie entro 24 ore ! 
+                </p>
+            </div>
+            <div class="divContainer">
+                <form>
+                    <div>
+                        <label for="email">e-mail:</label>
+                        <input type="text" id="email" name="email" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="surname">Cognome:</label>
+                        <input type="text" id="surname" name="surname" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="date">Data evento:</label>
+                        <input type="date" id="date" name="date" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="ftime">Orario inizio:</label>
+                        <input type="time" id="ftime" name="ftime" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="ltime">Orario fine:</label>
+                        <input type="time" id="ltime" name="ltime" class="formCustom">
+                    </div>
+                    <div>
+                        <label for="place">Zona desiderata:</label>
+                        <select name="place" id="place" class="formCustom">
+                            <option value="Brera">Brera</option>
+                            <option value="Navigli">Navigli</option>
+                            <option value="Duomo">Piazza Duomo</option>
+                            <option value="Porta">Porta Venezia</option>
+                        </select>
+                    </div>
+                    <div class="buttonDiv">
+                        <input type="submit" value="INVIA" class="buttonCustom">
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>    
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://www.facebook.com/MilanFashionWeek/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/milanfashionweek/"><i class="fa fa-instagram"></i></a>
+            </div>
+            
+            <div class="row">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./calendario.html">CALENDARIO</a></li>
+                    <li><a href="./contatti.html">CONTATTI</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+   
 </body>
 </html>
