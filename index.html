@@ -1,61 +1,156 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Fashion Week</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="colors.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js" integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-</head>
-<body class="custom-background-color">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home - Fashion Week</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="colors.css">
+        <link rel="icon" type="image/x-icon" href="./imgs/tacco.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    </head>
+    <body class="custom-background-color">
+        <img class="imageBackground" src="./imgs/MilanFashion.jpeg" alt="imageSfilata">
 
-    <img class="imageBackground" src="./imgs/milanFashionWeekSfilata.jpeg" alt="imageSfilata">
+        <div class="blurNav"></div>
+        
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <ul class="links">
+                <li class="itemList"><a href="./index.html">Home</a></li>
+                <li class="itemList"><a href="./calendario.html">Calendario</a></li>
+                <li class="itemList"><a href="./contatti.html">Contatti</a></li>
+            </ul>
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
 
-    <div class="blurNav"></div>
-    
-    <nav>
-        <input id="nav-toggle" type="checkbox">
-        <ul class="links">
-            <li class="itemList"><a href="./index.html">Home</a></li>
-            <li class="itemList"><a href="./calendario.html">Calendario</a></li>
-            <li class="itemList"><a href="./contatti.html">Contatti</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
-
-    <section class="relativeSection">
-        <div class="flexContainer">
-            <div class="divGridLay">
-                <h1 class="firstH">Milan</h1>
-                <h1 class="secondH">Fashion</h1>
-                <h1 class="thirdH">Week</h1>
+        <section class="relativeSection">
+            <div class="flexContainer">
+                <div class="divFlexV">
+                    <div class="divGridLay">
+                        <div class="titleSection"><h1>Milan</h1></div>
+                        <div class="titleSection"><h1>Fashion</h1></div>
+                        <div class="titleSection"><h1>Week</h1></div>
+                        <div class="titleFlex"><h1>Milan Fashion Week</h1></div>
+                    </div>
+                    <div class="divContainer divContFirst">
+                        <p>
+                            La settimana della moda di Milano o Milano Fashion Week è una celebre settimana della moda tenuta due volte all'anno a Milano, in Italia.
+                            La settimana della moda milanese comprende in genere più di 40 sfilate per ogni edizione.
+                        </p>
+                    </div>
+                </div>
+                <div class="videoDiv">
+                    <video  controls autoplay muted loop>
+                        <source src="./imgs/Best of ANTEPRIMA Spring 2023  Milan Fashion Week.mp4" type="video/mp4">
+                    </video>
+                </div>
             </div>
-            <!-- <img src="./imgs/milanfashionweek.png" alt="milanfashionweek logo" height="50%" width="50%" /> -->
-            <p class="paragraphCustom">
-                La settimana della moda di Milano o Milano Fashion Week è una celebre settimana della moda tenuta due volte all'anno a Milano, in Italia.
-                La settimana della moda milanese comprende in genere più di 40 sfilate per ogni edizione e trasforma la città in un luogo di ritrovo turistico semplicemente creando varie sedi per le sfilate, ospitate nei palazzi più eleganti e influenti.
-            </p>
-        </div>
-    </section>
+        </section>
 
-    <section class="relativeSection">
-        <div class="blackDiv">
-            <p class="paragraphCustom">
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
-                <span><a href="./calendario.html">Scopri di più</a></span>
-            </p>  
-            <div class="divCalendarioEventi">
-                <h1 class="calendarTitle">Calendario</h1>
-                <h1 class="eventTitle">Eventi</h1>
+        <section class="relativeSection">
+                <div class="flexContainer">
+                    <div class="swiperTitle">
+                        <div class="divCalendarioEventi">
+                            <h1 class="calendarTitle">Calendario</h1>
+                            <h1 class="eventTitle">Eventi</h1>
+                        </div>  
+                        <div class="titleFlex">
+                            <h1>Calendario Eventi</h1>
+                        </div>
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="inDiv">
+                                        <figure>
+                                            <img src="./imgs/1.jpeg">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="inDiv">
+                                        <img src="./imgs/2.jpeg">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="inDiv">
+                                        <figure>
+                                            <img src="./imgs/3.webp">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="inDiv">
+                                            <img src="./imgs/4.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div> 
+                    <div class="divContainerLeft">          
+                        <p>
+                            Scopri gli eventi che sono in calendario e AFFRETTATI a prenotare i biglietti!
+                        </p>  
+                        <a class="linkCalendario" href="./calendario.html">Scopri di più</a>
+                    </div>
             </div>
-            <!-- <img src="./imgs/milanfashionweek.png" alt="milanfashionweek logo" height="50%" width="50%" /> -->
+        </section>
+
+        <div class="bannerSponsor">
+            <div class="flexBanner">
+                <marquee behavior="left" direction="right">
+                    <span>GUCCI</span> 
+                    <span>DOLCE&GABBANA</span>
+                    <span>Hermès </span>
+                    <span>aspesi </span>
+                    <span>avavav </span>
+                    <span>benetton </span>
+                    <span>blumarine </span>
+                    <span>borbonese </span>
+                    <span>bvlgari </span>
+                    <span>ferragamo </span>
+                     <span> ermanno </span>
+                     <span> scervino </span>
+                     <span>ferrari </span>
+                     <span>iceberg </span>
+                     <span>krizia </span>
+                     <span> lara </span>
+                     <span> chamandi </span>
+                     <span> mantù  </span>
+                     <span>philipp plein </span>
+                     <span>raxxy</span>
+                    <span>trussardi</span>
+                </marquee>
+            </div>
         </div>
-    </section>
-</body>
+
+        <footer>
+            <div class="footer">
+                <div class="row">
+                    <a href="https://www.facebook.com/MilanFashionWeek/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/milanfashionweek/"><i class="fa fa-instagram"></i></a>
+                </div>
+                
+                <div class="row">
+                    <ul>
+                        <li><a href="./index.html">HOME</a></li>
+                        <li><a href="./calendario.html">CALENDARIO</a></li>
+                        <li><a href="./contatti.html">CONTATTI</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="swiper.js"></script>
+
+    </body>
 </html>
