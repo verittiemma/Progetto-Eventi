@@ -113,14 +113,19 @@ nav .icon-burger .line {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
+	margin-bottom: 5%;
 }
 
 .imageBackground{
 	position: absolute;
 	width: 100vw;
-	height: 100%;
+	height: 110vh;
   	filter: blur(5px);
 	transform: scale(1.1); 
+}
+
+.pubblicita{
+	position: relative;
 }
 
 .flexContainer{
@@ -170,7 +175,7 @@ nav .icon-burger .line {
 }
 
 .calendarTitle{
-	font-size: 30px;
+	font-size: 50px;
 }
 
 .titleSection{
@@ -190,7 +195,6 @@ nav .icon-burger .line {
 	border:solid 5px #000000;
 	position: relative;
 	display: flex;
-	margin-right: 10%;
 }
 
 .divContainer p{
@@ -214,7 +218,6 @@ nav .icon-burger .line {
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
 	padding:3em 1em;
 	border:solid 5px #000000;
-	margin-left: 10%;
 }
 
 .linkCalendario{
@@ -224,7 +227,7 @@ nav .icon-burger .line {
 	font-size: 20px;
 	z-index: 0;
 	padding: 1em;
-	margin: 0;
+	margin-top: 3%;
 
 }
 
@@ -258,7 +261,7 @@ nav .icon-burger .line {
 }
 
 .eventTitle{
-	font-size:70px;
+	font-size:100px;
 }	
 
 .divGridLay{
@@ -273,7 +276,7 @@ nav .icon-burger .line {
 }
 
 .divCalendarioEventi{
-	text-align: right;
+	text-align: center;
 	text-transform: uppercase;
 	font-size: 40px;
 	color: #000000;
@@ -335,7 +338,6 @@ nav .icon-burger .line {
 /* Swiper */
 
 .swiperTitle{
-	width: 100%;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 5%;
@@ -441,6 +443,12 @@ marquee span:hover{
 
 	nav :checked ~ .icon-burger .line:nth-child(3) {
 		transform: translateY(-10px) rotate(-225deg);
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.swiperTitle .titleFlex{
+		font-size: 60px;
 	}
 }
 
