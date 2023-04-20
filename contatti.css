@@ -23,6 +23,7 @@ body{
 }
 
 nav {
+	background: rgba(0, 0, 0, 1);
 	position: relative;
 	z-index: 10;
 	padding: 0 5%;
@@ -106,8 +107,9 @@ nav .icon-burger .line {
 .relativeSection{
 	position: relative;
 	width: 100vw;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+	background-image: url(./imgs/milanfashionweek.png);
 }
 
 .imageBackground{
@@ -267,13 +269,49 @@ form{
     background-color: #ffff;
 }
 
+.pubblicita{
+	position: relative;
+}
+
+.bannerSponsor{
+	position: relative;
+}
+
+.active::before{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	width: 50%!important;
+	height: 1%;
+	background-color: #fff;
+	top: 80%;
+}
+
+.flexBanner{
+	padding: 1%;
+	text-transform: uppercase;
+	display:flex;
+	flex-direction: row;
+	background-color:#000;
+	color: #ffff;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+marquee span{
+	opacity: 0.3;
+	transition: 0.5s ease;
+}
+
+marquee span:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+
 @media screen and (max-width:720px){
 	.footer .row ul li{
 		display:block;
 	}
-}
-
-@media screen and (max-width: 300px){
 }
 
 @media screen and (max-width: 768px) {
