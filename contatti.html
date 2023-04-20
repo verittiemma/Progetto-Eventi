@@ -11,7 +11,7 @@
 </head>
 <body class="custom-background-color">
 
-    <img class="imageBackground" src="./imgs/milanFashionWeekSfilata.jpeg" alt="imageSfilata">
+    <!-- <img class="imageBackground" src="./imgs/milanFashionWeekSfilata.jpeg" alt="imageSfilata"> -->
 
     <div class="blurNav"></div>
     
@@ -20,7 +20,7 @@
         <ul class="links">
             <li class="itemList"><a href="./index.html">Home</a></li>
             <li class="itemList"><a href="./calendario.html">Calendario</a></li>
-            <li class="itemList"><a href="./contatti.html">Contatti</a></li>
+            <li class="itemList"><a class="active" href="./contatti.html">CREA IL TUO EVENTO</a></li>
         </ul>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
@@ -33,39 +33,27 @@
         <div class="flexContainer">
             <div class="containerDivs">
             <div class="divGridLay">
-                <h1 class="title">Contattaci</h1>
+                <h1 class="title">CREA IL TUO EVENTO</h1>
             </div>
             <div class="divParagraph"> 
                 <p>
                     Vuoi organizzare un tuo personale evento durante la fashion week?
-                    Compila il form sottostante, ti daremo tutte le informazioni necessarie entro 24 ore ! 
+                    Compila il form sottostante per prenotare il tuo spazio all'interno della settimana della moda ! 
                 </p>
             </div>
-            <div class="divContainer">
-                <form>
+            <div class="divContainer divForm">
+                <form id="formCreaEvento" method="POST" action="">
                     <div>
-                        <label for="email">e-mail:</label>
-                        <input type="text" id="email" name="email" class="formCustom">
+                        <label for="title">Titolo:</label>
+                        <input type="text" id="title" name="title" class="formCustom">
                     </div>
                     <div>
-                        <label for="name">Nome:</label>
-                        <input type="text" id="name" name="name" class="formCustom">
+                        <label for="dateInizio">Data di inizio:</label>
+                        <input type="date" id="dataInizio" name="dataInizio" class="formCustom">
                     </div>
                     <div>
-                        <label for="surname">Cognome:</label>
-                        <input type="text" id="surname" name="surname" class="formCustom">
-                    </div>
-                    <div>
-                        <label for="date">Data evento:</label>
-                        <input type="date" id="date" name="date" class="formCustom">
-                    </div>
-                    <div>
-                        <label for="ftime">Orario inizio:</label>
-                        <input type="time" id="ftime" name="ftime" class="formCustom">
-                    </div>
-                    <div>
-                        <label for="ltime">Orario fine:</label>
-                        <input type="time" id="ltime" name="ltime" class="formCustom">
+                        <label for="dateFine">Data di fine:</label>
+                        <input type="date" id="dataFine" name="dataFine" class="formCustom">
                     </div>
                     <div>
                         <label for="place">Zona desiderata:</label>
@@ -85,6 +73,39 @@
         </div>    
     </section>
 
+    <section class="pubblicita">
+        <div class="bannerSponsor">
+            <div class="flexBanner">
+                <marquee behavior="left" direction="right" loop=true>
+                    <span>GUCCI</span> 
+                    <span>DOLCE&GABBANA</span>
+                    <span>Diesel </span>
+                    <span>Fendi </span>
+                    <span>Alberta Ferretti </span>
+                    <span>Ferragamo </span>
+                    <span>Roberto Cavalli </span>
+                    <span>MaxMara </span>
+                    <span>Ferrari </span>
+                    <span>Prada </span>
+                    <span>Moschino </span>
+                    <span>Emporio Armani</span>
+                    <span>GCDS </span>
+                    <span>Blumarine </span>
+                    <span>Missoni </span>
+                    <span>Etro </span>
+                    <span>Versace </span>
+                    <span>Ermanno Scervino  </span>
+                    <span>Bottega Veneta </span>
+                    <span>Luisa Spagnoli</span>
+                    <span>Benetton</span>
+                    <span>Iceberg</span>
+                    <span>Trussardi</span>
+                    <span>Fracomina</span>
+                </marquee>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer">
             <div class="row">
@@ -96,12 +117,13 @@
                 <ul>
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./calendario.html">CALENDARIO</a></li>
-                    <li><a href="./contatti.html">CONTATTI</a></li>
+                    <li><a href="./contatti.html">CREA IL TUO EVENTO</a></li>
                 </ul>
             </div>
         </div>
     </footer>
 
+    <script src="contatti.js"></script>
    
 </body>
 </html>
