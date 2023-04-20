@@ -1,12 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Calendario - Fashion Week</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./imgs/tacco.png">
 </head>
 <body>
-    
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <ul class="links">
+            <li class="itemList"><a href="./index.html">Home</a></li>
+            <li class="itemList"><a class="active" href="./calendario.html">Calendario</a></li>
+            <li class="itemList"><a href="./contatti.html">Crea il tuo evento</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="decorationFirst"></div>
+
+    <section class="bodyPositions">
+        <div class="decorationSecond"></div>
+
+        <section class="eventiCreati">
+            <div class="eventiDiv" id="eventsDiv">
+                
+            </div>
+        </section>
+    </section>
+
+    <section class="pubblicita">
+        <div class="bannerSponsor">
+            <div class="flexBanner">
+                <marquee behavior="left" direction="right" loop=true>
+                    <span>GUCCI</span> 
+                    <span>DOLCE&GABBANA</span>
+                    <span>Diesel </span>
+                    <span>Fendi </span>
+                    <span>Alberta Ferretti </span>
+                    <span>Ferragamo </span>
+                    <span>Roberto Cavalli </span>
+                    <span>MaxMara </span>
+                    <span>Ferrari </span>
+                    <span>Prada </span>
+                    <span>Moschino </span>
+                    <span>Emporio Armani</span>
+                    <span>GCDS </span>
+                    <span>Blumarine </span>
+                    <span>Missoni </span>
+                    <span>Etro </span>
+                    <span>Versace </span>
+                    <span>Ermanno Scervino  </span>
+                    <span>Bottega Veneta </span>
+                    <span>Luisa Spagnoli</span>
+                    <span>Benetton</span>
+                    <span>Iceberg</span>
+                    <span>Trussardi</span>
+                    <span>Fracomina</span>
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="row">
+                <a href="https://www.facebook.com/MilanFashionWeek/"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/milanfashionweek/"><i class="fa fa-instagram"></i></a>
+            </div>
+            
+            <div class="row">
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./calendario.html">CALENDARIO</a></li>
+                    <li><a href="./contatti.html">CREA IL TUO EVENTO</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="calendario.js"></script>
 </body>
 </html>
